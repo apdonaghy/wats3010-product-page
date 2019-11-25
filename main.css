@@ -1,0 +1,25 @@
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Work Sans', sans-serif;
+    font-weight:500;
+}
+
+
+.jumbotron {
+
+        height:100vh;
+    
+}
+
+
+
+.align-items-center_1{
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron{
+background-image: url('images/hero_2.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
