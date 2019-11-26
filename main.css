@@ -1,25 +1,185 @@
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Work Sans', sans-serif;
-    font-weight:500;
+    font-weight:400;
 }
 
+/*hero*/
 
-.jumbotron {
+.jumbotron{
+  height:100vh;
+background-image: url('images/hero.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 0rem
 
-        height:100vh;
-    
 }
-
-
 
 .align-items-center_1{
     display: flex;
     align-items: center;
 }
 
-.jumbotron{
-background-image: url('images/hero_2.jpg');
-background-size: cover;
-background-repeat: no-repeat;
 
+.display-1{
+	color:white;
+	font-size:6.5em;
+	font-family: 'Work Sans', sans-serif;
+    font-weight:700;
+    line-height: .95em;
+    text-shadow:  0px 0px 10px #d07a4b;
+}
+
+
+@media (max-width: 1300px) {
+
+.display-1{
+	font-size:5em;
+    line-height: .95em;
+   
+}
+
+}
+
+@media (max-width: 1100px) {
+
+.jumbotron{
+  height:100vh;
+background-image: url('images/hero_med.jpg');
+
+}
+
+
+}
+
+
+
+@media (max-width: 800px) {
+
+.display-1{
+	font-size:3.5em;
+	color:white;
+	font-family: 'Work Sans', sans-serif;
+    font-weight:700;
+    line-height: .95em;
+    text-shadow:  0px 0px 10px #d07a4b;
+}
+
+.jumbotron{
+  height:100vh;
+background-image: url('images/hero_sm.jpg');
+
+}
+
+
+}
+
+@media (max-width: 400px) {
+
+.display-1{
+	font-size:2.5em;
+	color:white;
+	font-family: 'Work Sans', sans-serif;
+    font-weight:700;
+    line-height: .95em;
+    text-shadow:  0px 0px 10px #d07a4b;
+}
+
+}
+
+
+
+
+.animatable {
+  
+  /* initially hide animatable objects */
+  visibility: hidden;
+  
+  /* initially pause animatable objects their animations */
+  -webkit-animation-play-state: paused;   
+  -moz-animation-play-state: paused;     
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;   
+  animation-play-state: paused; 
+}
+
+/* show objects being animated */
+.animated {
+  visibility: visible;
+  
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+
+
+
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+    }   100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@-o-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.animated.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
 }

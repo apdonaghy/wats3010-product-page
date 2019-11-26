@@ -20,12 +20,14 @@
      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css">
 
      <!-- google fonts -->
-     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Work+Sans:500,700,900&display=swap"
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Work+Sans:400,700,900&display=swap"
           rel="stylesheet">
 
      <!-- icons -->
      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
      <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+     <meta name="msapplication-wide310x150logo" content="images/tile-wide.png" />
+     <meta name="msapplication-square310x310logo" content="images/tile.png" />
 
 </head>
 
@@ -61,17 +63,24 @@
 
      <div class="jumbotron fluid-jumbotron align-items-center_1">
           
-          <div>
-          <h1 class="display-3">Hello, world!</h1>
+          <div class="container">
+     <div class="col-lg-6 col-sm-8 col-xs-12 animatable fadeInUp">
+          <h1 class="display-1">Iluminating Your Best Ideas</h1>
           <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
           <hr class="my-4"> -->
           <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
           <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-         </div>
+          </div>
+      </div>
         </div>
 
-     <div>      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></div>
+
+
+        <div class="container embed-responsive embed-responsive-16by9 animatable fadeInUp">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xDl5m_mJrAM?rel=0" allowfullscreen></iframe>
+     </div>
+
+
      <!-- TODO: Populate this page with all the content you deem
              necessary to create a compelling product page! -->
 
@@ -92,6 +101,8 @@
      <!-- TODO: Create a call to action link to get users to sign up for the
              service. -->
 
+          
+
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
      </script>
@@ -101,6 +112,33 @@
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
      </script>
+
+  <script>jQuery(function($) {
+  
+  var doAnimations = function() {
+    
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    if ($animatables.length == 0) {
+      $(window).off('scroll', doAnimations);
+    }
+    
+    $animatables.each(function(i) {
+       var $animatable = $(this);
+      if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+        $animatable.removeClass('animatable').addClass('animated');
+      }
+    });
+
+  };
+  
+  $(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+
+});
+</script>  
+
 </body>
 
 </html>
