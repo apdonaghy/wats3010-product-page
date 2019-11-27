@@ -231,3 +231,10 @@ background-image: url('images/hero_sm.jpg');
     flex-wrap: nowrap;
 }
 
+.light-gray{
+    background-color:#F5F5F5;
+}
+
+.pricing{
+    color:#007EFF;
+}
