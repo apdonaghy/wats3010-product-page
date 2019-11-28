@@ -8,6 +8,15 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
+h4{
+    font-weight:700;
+    font-size: 2em;
+}
+
+h5{
+    font-size: 1em;
+    font-weight: 600;
+}
 
 /* nav */
 
@@ -197,3 +206,13 @@ img[src^="images/t"]{
     border-radius: 50%;
 }
 
+.mza{
+    display:block;
+    margin: 0 auto;
+}
+
+.white{
+    color:white;
+    font-size:1.3em;
+    font-weight:300;
+}
