@@ -15,12 +15,15 @@
      <!-- Bootstrap CSS Framework -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+     <!-- Custom CSS -->
      <link rel="stylesheet" type="text/css" href="main.css">
+     <link rel="stylesheet" type="text/css" href="animation.css">
      <!-- font awesome -->
      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css">
 
      <!-- google fonts -->
-     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500|Work+Sans:400,700,900&display=swap"
+     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500|Work+Sans:400,700,900&display=swap"
           rel="stylesheet">
 
      <!-- icons -->
@@ -31,9 +34,9 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar">
 
-     <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
+     <nav id="navbar" class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="#">
                <img src="images/api.svg" Style="width:8em; height:auto;" alt="api super store logo">
           </a>
@@ -54,14 +57,14 @@
                          <a class="nav-link" href="#plans">plans</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="#">testimonials</a>
+                         <a class="nav-link" href="#testimonials">testimonials</a>
                     </li>
                </ul>
 
           </div>
      </nav>
-
-     <div class="jumbotron fluid-jumbotron align-items-center_1 mt-5">
+     <div class="mb-5"></div>
+     <div class="jumbotron fluid-jumbotron align-items-center_1">
 
           <div class="container">
                <div class="col-lg-6 col-sm-8 col-xs-12 animatable fadeInUp">
@@ -70,18 +73,23 @@
                          online.</p>
                     <a class="btn btn-primary btn-lg" href="#plans" role="button">See Plans</a>
                </div>
+
           </div>
+
      </div>
 
+   
 
+     <div class="margin-bottom" id="video"></div>
+     <div class="container embed-responsive embed-responsive-16by9 margin-bottom">
 
-     <div class="container embed-responsive embed-responsive-16by9 margin-bottom" id="video">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xDl5m_mJrAM?rel=0"
                allowfullscreen></iframe>
+          <div id="features"></div>
      </div>
 
 
-     <div class="container-fluid features pt-4 pb-4" id="features">
+     <div class="container-fluid features pt-4 pb-5">
 
 
           <h1 class="display-3 container mb-5 text-center text-md-left">Features</h1>
@@ -117,15 +125,13 @@
                </div>
           </div>
 
-
+          <div id="plans"></div>
      </div>
 
-     <div class="container-fluid light-gray pt-4 pb-5" id="plans">
+     <div class="container-fluid light-gray pt-4 pb-5">
 
-          <div class="container pt-4">
+          <div class="container">
                <h1 class="display-3 fadeInUp mb-3 text-center text-md-left pricing">Plans</h1>
-
-               <!-- Content Row -->
                <div class="row">
                     <div class="col-lg-4 mb-4 animatable fadeInUp">
                          <div class="card h-100">
@@ -180,34 +186,31 @@
                          </div>
                     </div>
                </div>
-               <!-- /.row -->
           </div>
+          <div id="testimonials"></div>
      </div>
 
 
 
-     <div class="container-fluid testimonials pt-4 pb-4" id="testimonials">
-
+     <div class="container-fluid testimonials pt-4 pb-5">
 
           <h1 class="display-3 container mb-5 text-center text-md-left">Testimonials</h1>
 
-          <div class="row container align-items-center_1 mx-auto ">
+          <div class="row container align-items-center_1 mx-auto">
                <div class="col-md-6 col-sm-12">
                     <div class="animatable fadeInUp">
-                         <img class="img-fluid mx-auto tm imgWidth" src="images/t1.png" alt="">
+                         <img class="img-fluid mx-auto tm imgWidth" src="images/t1.jpg" alt="">
                     </div>
                     <div class="animatable fadeInUp">
-                         <img class="img-fluid mx-auto tm imgWidth" src="images/t3.png" alt="">
+                         <img class="img-fluid mx-auto tm imgWidth" src="images/t3.jpg" alt="">
                     </div>
                </div>
                <div class="col-md-6 col-sm-12">
-                         <div class="animatable fadeInUp">
-                         <img class="img-fluid mx-auto tm imgWidth" src="images/t2.png" alt="">
+                    <div class="animatable fadeInUp">
+                         <img class="img-fluid mx-auto tm imgWidth" src="images/t2.jpg" alt="">
                     </div>
                </div>
           </div>
-
-
      </div>
 
 
