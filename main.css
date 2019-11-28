@@ -1,53 +1,52 @@
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Work Sans', sans-serif;
-    font-weight:400;
+    font-weight: 400;
 }
 
 /*hero*/
 
 
-.jumbotron{
-  height:100vh;
-background-image: url('images/hero.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-border-radius: 0rem
-
+.jumbotron {
+    height: 100vh;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0rem
 }
 
-.align-items-center_1{
+.align-items-center_1 {
     display: flex;
     align-items: center;
 }
 
 
-.display-1{
-	color:white;
-	font-size:6.5em;
-	font-family: 'Work Sans', sans-serif;
-    font-weight:700;
+.display-1 {
+    color: white;
+    font-size: 6.5em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
     line-height: .95em;
-    text-shadow:  0px 0px 10px #d07a4b;
+    text-shadow: 0px 0px 10px #d07a4b;
 }
 
 
 @media (max-width: 1200px) {
 
-.display-1{
-	font-size:5em;
-    line-height: .95em;
-   
-}
+    .display-1 {
+        font-size: 5em;
+        line-height: .95em;
+
+    }
 
 }
 
 @media (max-width: 992px) {
 
-.jumbotron{
-  height:100vh;
-background-image: url('images/hero_med.jpg');
+    .jumbotron {
+        height: 100vh;
+        background-image: url('images/hero_med.jpg');
 
-}
+    }
 
 
 }
@@ -56,34 +55,34 @@ background-image: url('images/hero_med.jpg');
 
 @media (max-width: 768px) {
 
-.display-1{
-	font-size:4em;
-	color:white;
-	font-family: 'Work Sans', sans-serif;
-    font-weight:700;
-    line-height: .95em;
-    text-shadow:  0px 0px 10px #d07a4b;
-}
+    .display-1 {
+        font-size: 4em;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 700;
+        line-height: .95em;
+        text-shadow: 0px 0px 10px #d07a4b;
+    }
 
-.jumbotron{
-  height:100vh;
-background-image: url('images/hero_sm.jpg');
+    .jumbotron {
+        height: 100vh;
+        background-image: url('images/hero_sm.jpg');
 
-}
+    }
 
 
 }
 
 @media (max-width: 576px) {
 
-.display-1{
-	font-size:3em;
-	color:white;
-	font-family: 'Work Sans', sans-serif;
-    font-weight:700;
-    line-height: .95em;
-    text-shadow:  0px 0px 10px #d07a4b;
-}
+    .display-1 {
+        font-size: 3em;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 700;
+        line-height: .95em;
+        text-shadow: 0px 0px 10px #d07a4b;
+    }
 
 }
 
@@ -91,39 +90,39 @@ background-image: url('images/hero_sm.jpg');
 
 
 .animatable {
-  
-  /* initially hide animatable objects */
-  visibility: hidden;
-  
-  /* initially pause animatable objects their animations */
-  -webkit-animation-play-state: paused;   
-  -moz-animation-play-state: paused;     
-  -ms-animation-play-state: paused;
-  -o-animation-play-state: paused;   
-  animation-play-state: paused; 
+
+    /* initially hide animatable objects */
+    visibility: hidden;
+
+    /* initially pause animatable objects their animations */
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 /* show objects being animated */
 .animated {
-  visibility: visible;
-  
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
+    visibility: visible;
 
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  -ms-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
 }
 
 
@@ -134,7 +133,9 @@ background-image: url('images/hero_sm.jpg');
     0% {
         opacity: 0;
         -webkit-transform: translateY(30px);
-    }   100% {
+    }
+
+    100% {
         opacity: 1;
         -webkit-transform: translateY(0);
     }
@@ -185,56 +186,70 @@ background-image: url('images/hero_sm.jpg');
     animation-name: fadeInUp;
 }
 
-.features{
-    background-color:#323233;
+.features {
+    background-color: #353A3F;
 }
 
-.display-3{
-    color:white;
+.display-3 {
+    color: white;
     font-family: 'Work Sans', sans-serif;
-    font-weight:700;
+    font-weight: 700;
 }
 
-@media (max-width: 768px) {  
-.display-3{
-    font-size:3.5rem;
-}
-}
-
-.margin-bottom{
-    margin-bottom:2rem;
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 3.5rem;
+    }
 }
 
-.features p{
-    color:white;
+.margin-bottom {
+    margin-bottom: 2rem;
 }
 
-.svg-max{
-    max-width:12rem;
+.features p {
+    color: white;
 }
 
-.display-4{
-    color:white;
+.svg-max {
+    max-width: 12rem;
+}
+
+.display-4 {
+    color: white;
     font-family: 'Roboto', sans-serif;
-    font-weight:100;
-    font-size:2.5rem;
+    font-weight: 100;
+    font-size: 2.5rem;
 }
 
 
-@media (max-width: 768px){
-.features p{
-    font-size:1.5rem;
-}
+@media (max-width: 768px) {
+    .features p {
+        font-size: 1.5rem;
+    }
 }
 
-.nowrap{
+.nowrap {
     flex-wrap: nowrap;
 }
 
-.light-gray{
-    background-color:#F5F5F5;
+.light-gray {
+    background-color: #F5F5F5;
 }
 
-.pricing{
-    color:#007EFF;
+.pricing {
+    color: #007EFF;
+}
+
+
+.testimonials {
+    background-color: #007EFF;
+}
+
+.tm{
+    max-width:25rem;
+}
+
+.imgWidth{
+    display:block;
+    width:100%;
 }
