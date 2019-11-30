@@ -12,14 +12,16 @@ h4{
     font-weight:700;
     font-size: 2em;
     margin-bottom:.1em;
+    color:white;
 }
 
 h5{
     font-size: 1.2em;
     font-weight: 600;
     padding-bottom:.4em;
-    border-bottom: black solid 2px;
+    border-bottom:white solid 2px;
     margin-bottom:.7em;
+    color:white;
 }
 
 /* nav */
@@ -197,6 +199,10 @@ nav{
     background-color: #007EFF;
 }
 
+.testimonials p{
+    font-weight:200;
+}
+
 .tm{
     max-width:22rem;
 }
@@ -246,9 +252,31 @@ footer a{
 }
 
 footer a:hover{
-    color:#d07a4b;
+    color: #007EFF;
 }
 
-footer i{
-    color:#d07a4b;
+.contact i{
+    color: #007EFF;
+}
+
+.noLineHeight{
+    line-height:0px;
+}
+
+.copyright{
+    display:block;
+    color:#353A3F;
+    background-color: #007EFF;
+    width:13em;
+    padding:.5em;
+    font-size:.8em;
+    font-weight:600;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari 3-8 */
+    transform: rotate(270deg);
+    margin:0;
+}
+
+.mbN{
+float:right;    
 }
