@@ -107,7 +107,6 @@ nav{
 
     }
 
-
 }
 
 @media (max-width: 576px) {
@@ -139,7 +138,7 @@ nav{
 
 @media (max-width: 768px) {
     .display-3 {
-        font-size: 3.5rem;
+        font-size: 2.7rem;
     }
 }
 
@@ -255,7 +254,7 @@ footer a:hover{
     color: #007EFF;
 }
 
-.contact i{
+footer i{
     color: #007EFF;
 }
 
@@ -264,19 +263,10 @@ footer a:hover{
 }
 
 .copyright{
-    display:block;
-    color:#353A3F;
-    background-color: #007EFF;
+    color: #007EFF;
     width:13em;
     padding:.5em;
     font-size:.8em;
     font-weight:600;
-    -ms-transform: rotate(270deg); /* IE 9 */
-    -webkit-transform: rotate(270deg); /* Safari 3-8 */
-    transform: rotate(270deg);
-    margin:0;
-}
-
-.mbN{
-float:right;    
+    text-align:center;
 }
