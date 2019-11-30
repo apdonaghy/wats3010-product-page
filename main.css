@@ -1,5 +1,12 @@
 /* general */
 
+:root {
+    --dark-gray:#353A3F;
+    --light-gray:#AAACAF;
+    --brand-color1:#d07a4b;
+    --brand-color2:#007EFF;
+  }
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Work Sans', sans-serif;
 }
@@ -60,7 +67,7 @@ nav{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     line-height: .95em;
-    text-shadow: 0px 0px 10px #d07a4b;
+    text-shadow: 0px 0px 10px var(--brand-color1);
 }
 
 .lead{
@@ -98,7 +105,7 @@ nav{
         font-family: 'Work Sans', sans-serif;
         font-weight: 700;
         line-height: .95em;
-        text-shadow: 0px 0px 10px #d07a4b;
+        text-shadow: 0px 0px 10px var(--brand-color1);
     }
 
     .jumbotron {
@@ -116,7 +123,7 @@ nav{
         color: white;
         font-weight: 700;
         line-height: .95em;
-        text-shadow: 0px 0px 10px #d07a4b;
+        text-shadow: 0px 0px 10px var(--brand-color1);
     }
 
 }
@@ -128,7 +135,7 @@ nav{
 /* features */
 
 .features {
-    background-color: #353A3F;
+    background-color:var(--dark-gray);;
 }
 
 .display-3 {
@@ -182,7 +189,7 @@ nav{
 }
 
 .pricing {
-    color: #007EFF;
+    color: var(--brand-color2);
 }
 
 
@@ -195,7 +202,7 @@ nav{
 /* testimonials */
 
 .testimonials {
-    background-color: #007EFF;
+    background-color: var(--brand-color2);
 }
 
 .testimonials p{
@@ -231,7 +238,7 @@ img[src^="images/t"]{
 
 footer {
     color:#AAACAF;
-    background-color: #353A3F;
+    background-color: var(--dark-gray);
 }
 
 footer h4{
@@ -246,16 +253,16 @@ footer p, footer a{
 }
 
 footer a{
-    color:#AAACAF;
+    color:var(--light-gray);
     text-decoration:underline;
 }
 
 footer a:hover{
-    color: #007EFF;
+    color: var(--brand-color2);
 }
 
 footer i{
-    color: #007EFF;
+    color: var(--brand-color2);
 }
 
 .noLineHeight{
@@ -263,7 +270,7 @@ footer i{
 }
 
 .copyright{
-    color: #007EFF;
+    color: var(--brand-color2);
     width:13em;
     padding:.5em;
     font-size:.8em;
