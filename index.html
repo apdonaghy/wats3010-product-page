@@ -34,41 +34,29 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#navbar">
-
-     <div id="fb-root"></div>
-     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0">
-     </script>
+<body>
 
 
-     <nav id="navbar" class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">
-               <img src="images/api.svg" Style="width:8em; height:auto;" alt="api super store logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-               aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
+<a href="#" id="logo">
+<img class="header_logo"  src="images/api_logo.svg">
+</a>
 
-               <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                         <a class="nav-link orange" href="#video">video</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="#features">features</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="#plans">plans</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="#testimonials">testimonials</a>
-                    </li>
-               </ul>
+<nav id="myNav" class="overlay">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <div class="overlay-content">
+       <a class="intNav" onclick="closeNav()" href="#video">VIDEO</a>
+       <a class="intNav" onclick="closeNav()" href="#features">FEATURES</a>
+       <a class="intNav" onclick="closeNav()" href="#plans">PLANS</a>
+       <a class="intNav" onclick="closeNav()" href="#testimonials">TESTIMONIALS</a>
+     </div>
+</nav>
+   
+   <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
 
-          </div>
-     </nav>
-     <div class="mb-5"></div>
+
+
+
+     
      <div class="jumbotron fluid-jumbotron align-items-center_1">
 
           <div class="container">
@@ -83,18 +71,18 @@
 
      </div>
 
-
+     <div class="mb-5"></div>
 
      <div class="margin-bottom hello" id="video"></div>
      <div class="container embed-responsive embed-responsive-16by9 margin-bottom">
 
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xDl5m_mJrAM?rel=0"
                allowfullscreen></iframe>
-          <div id="features" class="hello"></div>
+          <div class="hello"></div>
      </div>
 
 
-     <section class="container-fluid features pt-4 pb-5">
+     <section class="container-fluid features pt-4 pb-5" id="features">
 
 
           <h2 class="display-3 container mb-4">Features</h2>
@@ -130,10 +118,10 @@
                </div>
           </div>
 
-          <div id="plans"></div>
+         
      </section>
 
-     <section class="container-fluid light-gray pt-4 pb-5">
+     <section class="container-fluid light-gray pt-4 pb-5" id="plans">
 
           <div class="container">
                <h2 class="display-3 fadeInUp mb-4 pricing">Plans</h2>
@@ -192,12 +180,12 @@
                     </div>
                </div>
           </div>
-          <div id="testimonials"></div>
+         
      </section>
 
 
 
-     <section class="container-fluid testimonials pt-4 pb-5">
+     <section class="container-fluid testimonials pt-4 pb-5" id="testimonials">
 
           <h2 class="display-3 container mb-4">Testimonials</h2>
 
@@ -275,8 +263,9 @@
                     </div>
 
                </div>
+               <a href="#logo"><img class="arrow"  src="images/arrow.svg"><a>
           </div>
-
+    
      </footer>
    
           <p class="black copyright"><i class="fas fa-copyright"></i>2020 API Super Store</p>
@@ -298,7 +287,9 @@
 
 
      <script src="scripts.js"></script>
-
+     <div id="fb-root"></div>
+     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0">
+     </script>
 
 
 </body>
